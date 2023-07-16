@@ -3,7 +3,7 @@ import openai
 import streamlit as st
 
 # Load your API key from an environment variable or secret management service
-openai.api_key = "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"
+openai.api_key = st.secrets["chatgpt_api_key"]
 
 message = """
 초기 자산을 확인합니다.
